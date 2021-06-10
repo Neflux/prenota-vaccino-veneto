@@ -1,4 +1,3 @@
-
 # ULSS di riferimento
 ulss: 8
 
@@ -9,11 +8,13 @@ nome: ''
 email: ''
 cellulare: ''
 
-# Se ci sono delle priorità, specificare qui alcune paroline che identificano ciascuna delle sedi (CASE SENSITIVE)
+# Se ci sono delle priorità, specificare qui alcune paroline che identificano ciascuna delle sedi
+# E' case sensitive, quindi attenti alle maiuscole
 # La prima ha più priorità della seconda, e così via...
 priorita_sedi: ['parolina1','parolina2']
 
 # Tempo di attesa in secondi tra un tentativo e l'altro
+# Se questo è troppo basso (es. 0) potrebbe arrivarti una bella chiamata dalla sanità
 tempo_attesa: 3
 
 # Data minima accettabile (compresa)

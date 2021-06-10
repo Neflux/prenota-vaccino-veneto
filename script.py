@@ -9,6 +9,7 @@ __status__ = "Production"
 
 import random
 from functools import partial
+from datetime import datetime as dt
 from time import sleep
 
 import yaml
@@ -19,7 +20,7 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-from datetime import datetime as dt
+
 
 
 def priorita_sede(sede: WebElement, settaggi: dict) -> int:
