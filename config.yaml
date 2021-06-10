@@ -1,0 +1,26 @@
+
+# ULSS di riferimento
+ulss: 8
+
+cod_fiscale: ''
+num_tessera: ''
+cognome: ''
+nome: ''
+email: ''
+cellulare: ''
+
+# Se ci sono delle priorità, specificare qui alcune paroline che identificano ciascuna delle sedi (CASE SENSITIVE)
+# La prima ha più priorità della seconda, e così via...
+priorita_sedi: ['parolina1','parolina2']
+
+# Tempo di attesa in secondi tra un tentativo e l'altro
+tempo_attesa: 3
+
+# Data minima accettabile (compresa)
+data_minima: '2021-06-15'
+
+# Data massima accettabile (compresa)
+data_limite: '2021-07-20'
+
+# Stessa sintassi di priorità sedi, ma serve per specificare le sedi alle quali non si vuole assolutamente andare
+blacklist: ['parolina3', 'parolina4']
