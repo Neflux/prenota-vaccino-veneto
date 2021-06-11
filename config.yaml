@@ -11,17 +11,17 @@ cellulare: ''
 # Se ci sono delle priorità, specificare qui alcune paroline che identificano ciascuna delle sedi
 # E' case sensitive, quindi attenti alle maiuscole
 # La prima ha più priorità della seconda, e così via...
-priorita_sedi: ['parolina1','parolina2']
+priorita_sedi: ['Fiera','Eretenia']
 
 # Tempo di attesa in secondi tra un tentativo e l'altro
 # Se questo è troppo basso (es. 0) potrebbe arrivarti una bella chiamata dalla sanità
-tempo_attesa: 3
+tempo_attesa: 8
 
 # Data minima accettabile (compresa)
-data_minima: '2021-06-15'
+data_minima: '2021-05-15'
 
 # Data massima accettabile (compresa)
-data_limite: '2021-07-20'
+data_limite: '2021-08-20'
 
 # Stessa sintassi di priorità sedi, ma serve per specificare le sedi alle quali non si vuole assolutamente andare
-blacklist: ['parolina3', 'parolina4']
+blacklist: ['Lonigo','Noventa','Trissino','Villa', 'Valdagno', 'Montecchio']

@@ -21,8 +21,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
 
-
-
 def priorita_sede(sede: WebElement, settaggi: dict) -> int:
     """
     Restituisce la priorità della sede se questa contiene nel nome una delle sottostringhe specificate in "priorita_sedi"
@@ -158,9 +156,7 @@ while True:
                      if data_minima <= dt.strptime(g.get_attribute('data-date'), '%Y-%m-%d') <= data_limite]
 
         if len(date_disp) == 0:
-
             if dt.strptime(giorni_mese[-1].get_attribute('data-date'), '%Y-%m-%d') >= data_limite:
-                date_disp = []
                 break
 
             # Vai al prossimo mese
@@ -183,10 +179,10 @@ while True:
     date_disp[0].click()
 
     # A questo punto potrebbe essere già stata presa da qualcuno col dito veloce, controlla che sia tutto ok
-    alert_goback = attendi_elemento("div.alert.alert-danger", By.CSS_SELECTOR, 'visible', wait=1, error=False)
-    if alert_goback is not None:
-        browser.refresh()
-        continue
+    # alert_goback = attendi_elemento("div.alert.alert-danger", By.CSS_SELECTOR, 'visible', wait=1, error=False)
+    # if alert_goback is not None:
+    #     browser.refresh()
+    #     continue
 
     # Aspetto che ci sia scritto "Fasce disponibili.." e poi leggo tutti i button dopo questa scritta
     attendi_elemento("//h2[text()[contains(.,'Fasce disponibili')]]/following-sibling::button", By.XPATH,
