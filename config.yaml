@@ -1,24 +1,24 @@
 # ULSS di riferimento
 ulss: 8
 
-cod_fiscale: ''
-num_tessera: ''
-cognome: ''
-nome: ''
-email: ''
-cellulare: ''
+cod_fiscale: 'DLDLCU98E22L840L'
+num_tessera: '80380000502399203722'
+cognome: 'Dal Dosso'
+nome: 'Luca'
+email: 'lucadaldosso98@gmail.com'
+cellulare: '3453037732'
 
 # Se ci sono delle priorità, specificare qui alcune paroline che identificano ciascuna delle sedi
 # E' case sensitive, quindi attenti alle maiuscole
 # La prima ha più priorità della seconda, e così via...
-priorita_sedi: ['Fiera','Eretenia']
+priorita_sedi: ['Fiera','Eretenia','Villa Berica']
 
 # Tempo di attesa in secondi tra un tentativo e l'altro
 # Se questo è troppo basso (es. 0) potrebbe arrivarti una bella chiamata dalla sanità
 tempo_attesa: 8
 
 # Data minima accettabile (compresa)
-data_minima: '2021-05-15'
+data_minima: '2021-06-28'
 
 # Data massima accettabile (compresa)
 data_limite: '2021-08-20'
